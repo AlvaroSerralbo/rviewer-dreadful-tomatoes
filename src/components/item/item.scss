@@ -1,0 +1,86 @@
+.item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+    .item-image {
+        img {
+            width: 100%;
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            transform: scale(1.05);
+            transition: all .5s;
+        }
+    }
+
+    .item-info {
+        background: #00000080;
+        padding: 15px 12px;
+        position: absolute;
+        bottom: -50%;
+        transition: all .5s;
+        width: 100%;
+        box-sizing: border-box;
+
+        .item-title {
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                transition: all .5s;
+            }
+        }
+
+        .item-year {
+            font-size: 12px;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 5px;
+
+            img{
+                width: 7%;
+                padding-right: 5px;
+            }
+        }
+
+        .item-description {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .item-year,
+        .item-description {
+            opacity: 0;
+            transition: all .5s;
+        }
+    }
+
+    &:hover {
+        .item-info{
+            bottom: 0%;
+
+            .item-title {
+                h4{
+                    text-overflow: unset;
+                    white-space: normal;
+                    overflow: visible;
+                }
+            }
+
+            .item-year,
+            .item-description {
+                opacity: 1;
+            }
+        }
+
+        .item-image {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

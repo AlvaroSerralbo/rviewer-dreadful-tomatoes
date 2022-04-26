@@ -1,0 +1,114 @@
+@import url('https://css.gg/calendar.css');
+
+.filter-date-container {
+    input {
+        &[type="text"] {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            box-sizing: border-box;
+            padding-left: 40px;
+            color: grey;
+            cursor: pointer;
+            caret-color: transparent;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+        
+    }
+
+    .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before,
+    .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after {
+        border-bottom-color: #c5201a;
+    }
+
+    .react-datepicker{
+        border: 0;
+    }
+
+    .react-datepicker-popper {
+
+        > div {
+            box-shadow: -1px 0px 15px 5px #00000080;
+        }
+    }
+    
+    .filter-date {
+        .react-datepicker__header.react-datepicker-year-header {
+            background: #c5201a;
+            color: #ffffff;
+            padding: 15px 0;
+            border: 0;
+        }
+
+        .react-datepicker__navigation {
+            align-items: end;
+
+            .react-datepicker__navigation-icon::before {
+                border-color: #ffffff;
+            }
+        }
+
+        .react-datepicker__year-wrapper {
+            max-width: 330px;
+            justify-content: space-evenly;
+        }
+
+        .react-datepicker__year-text {
+            padding: 15px 20px !important;
+            font-size: 18px;
+            color: grey;
+        }
+
+        .react-datepicker__year-text--selected,
+        .react-datepicker__year-text--keyboard-selected {
+            background: #c5201a;
+            color: #ffffff;
+            border-radius: 0;
+        }
+
+        .react-datepicker__year-text:hover {
+            color: #ffffff;
+            border-radius: 0;
+            background-color: #c5201a87;
+        }
+    }
+    
+    // .gg-calendar,
+    // .gg-calendar::before {
+    //     display: block;
+    //     box-sizing: border-box
+    // }
+    
+    // .gg-calendar {
+    //     position: relative;
+    //     transform: scale(var(--ggs,1));
+    //     width: 18px;
+    //     height: 18px;
+    //     border: 2px solid;
+    //     border-top: 4px solid;
+    //     border-radius: 3px
+
+
+
+    //     // position: absolute;
+    //     // color: #c5201a;
+    //     // z-index: 9;
+    //     // left: 20px;
+    //     // top: 10px;
+    // }
+    
+    // .gg-calendar::before {
+    //     content: "";
+    //     position: absolute;
+    //     width: 10px;
+    //     border-radius: 3px;
+    //     left: 2px;
+    //     background: currentColor;
+    //     height: 2px;
+    //     top: 2px
+    // } 
+
+}

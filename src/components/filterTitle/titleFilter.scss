@@ -1,0 +1,51 @@
+
+@import url('https://css.gg/search.css');
+
+.filter-title-container {
+    position: relative;
+    width: 100%;
+    
+    input {
+        &[type="text"] {
+            width: 95%;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+            box-sizing: border-box;
+            padding-left: 40px;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    
+    .gg-search {
+        position: absolute;
+        color: #c5201b;
+        left: 20px;
+        top: 14px;
+        box-sizing: border-box;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 16px;
+        height: 16px;
+        border: 2px solid;
+        border-radius: 100%;
+        margin-left: -4px;
+        margin-top: -4px
+    }
+    .gg-search::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-radius: 3px;
+        width: 2px;
+        height: 8px;
+        background: currentColor;
+        transform: rotate(-45deg);
+        top: 10px;
+        left: 12px
+    }
+}

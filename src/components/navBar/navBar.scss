@@ -1,0 +1,98 @@
+header {
+    background-color: #000000;
+    height: 6vh;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-section {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                margin-right: 50px;
+            }
+
+            .nav-icon {
+                background-color: #000000;
+                padding: 0 20px;
+                border: none;
+                height: 57px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 35%;
+                    margin-right: 10px;
+                }
+
+                &.filter-icon {
+                    cursor: pointer;
+                }
+
+                &.active {
+                    background-color: #201f20 !important;
+                }
+            }
+
+            .active {
+                .nav-icon {
+                    background-color: #c5201b;
+                }
+            }
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+    
+            li {
+                padding: 7px 20px;
+                -webkit-touch-callout: none; 
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                
+                &:first-child {
+                    border-right: 1px solid;
+                    border-left: 1px solid;
+                    border-color: #ffffff;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+
+        &.logo-button {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+
+        &.trial-button {
+            background: #c42521;
+            border-radius: 20px;
+            padding: 7px 20px;
+            transition: all .3s;
+
+            &:hover {
+                background: #b0120a;
+            }
+        }
+        
+    }
+}

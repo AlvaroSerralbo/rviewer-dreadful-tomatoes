@@ -1,0 +1,38 @@
+.footer {
+    background-color: #000000;
+    text-align: center;
+    width: 100vw;
+    padding-top: 15px;
+    height: 20vh;
+
+    img {
+        width: 12%;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        li {
+            margin: 0 10px;
+            font-weight: 600;
+        }
+    }
+
+    .app-icons {
+        margin-bottom: 15px;
+
+        img {
+            width: 7%;
+            margin: 0 5px;
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+        padding-bottom: 20px;
+        color: #8d8c8c;
+    }
+}

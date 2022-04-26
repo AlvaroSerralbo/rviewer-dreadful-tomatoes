@@ -1,0 +1,13 @@
+
+.filter-container {
+    background: #c5201b;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
